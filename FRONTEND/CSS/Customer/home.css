@@ -67,7 +67,6 @@
     display: flex;
 }
 
-
 /* Hero Page */
 .hero{
     position: relative;
@@ -157,3 +156,4 @@
     background-color: rgba(217, 217, 217, 0.4);
     font-size: var(--sz-20);
 }
+
