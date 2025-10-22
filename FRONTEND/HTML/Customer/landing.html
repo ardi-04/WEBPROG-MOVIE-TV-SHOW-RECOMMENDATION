@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="icon" type="image/png" href="../../img/logo/OWL LOGO.png">
+        <link rel="stylesheet" href="../../CSS/Global/global.css">
+        <link rel="stylesheet" href="../../CSS/Global/component.css">
+        <link rel="stylesheet" href="../../CSS/Customer/landing/landing.css">
+        <title>VIODAKA</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="land-header">
+            <div class="head-log-name">
+                <img src="../../img/logo/OWL LOGO.png" alt="owl" class="owl-logo">
+                <h1 id="h-sitename">VIODAKA</h1>
+            </div>
+            <nav class="nav-container">
+                <li>
+                    <ul class="nav home"><a href="home.html">HOME</a></ul>
+                    <ul class="nav movies"><a href="#">MOVIES</a></ul>
+                    <ul class="nav tvShow"><a href="#">TV SHOW</a></ul>
+                    <ul class="nav logIn"><a href="#login-modal">LOG IN</a></ul>                            
+                </li>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- hero section -->
+            <section class="hero">   
+                <div class="main-h-container">       
+                    <div class="hero-container">         
+                            <h1>VIODAKA</h1>
+                            <p>Serving you movies and shows you didn’t know you needed — from hidden gems to cult classics, no endless scrolling required</p>
+                            <div class="sr-container">
+                                <input type="search" class="search LP" placeholder="Search Movies or TV Shows" >
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <!-- <button >Discover Movies</button> -->
+                            <a class="btn DM" href="home.html" target="_self">Discover Movies</a>
+                    </div>
+                </div>        
+            </section>
+
+            <!-- The whats hot rn -->
+            <section class="landing-list" id="l-list">
+                <div class="container movie-section">
+                    <div><a href="#" class="lp-hot">What's Hot Right Now</a></div>
+                    <div class="container Trending">
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="The Black Phone" >
+                            </div>
+                            <div class="movie-title"><p class="m-title">Black Phone 2</p></div>
+                        </div>
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="Tron Ares">
+                            </div>
+                            <div class="movie-title"><p class="m-title">Tron Ares</p></div>
+                        </div>
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="Fortune">
+                            </div>
+                            <div class="movie-title"><p class="m-title">The Good Fortune</p></div>
+                        </div>
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="conjuring">
+                            </div>
+                            <div class="movie-title"><p class="m-title">The Conjuring: Last Rite</p></div>
+                        </div>
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="Demon Slayer" >
+                            </div>
+                            <div class="movie-title"><p class="m-title">Demon Slayer: Infinity Castle</p></div>
+                        </div>
+
+                        <div class="movie-card">
+                            <div class="movie-poster" data-title="Alice in Borderland" >
+                            </div>
+                            <div class="movie-title"><p class="m-title">Alice in Borderland</p></div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Details -->
+            <section class="about" id="l-about">
+                <div>
+                    <h1>What is VIODAKA?</h1>
+                </div>
+                <div>
+                    <p>
+                        Viodaka is your destination for discovering movies and TV shows you’ll love. 
+                        From the latest blockbusters to underrated hidden gems, we provide ratings, reviews, and curated lists to guide your next watch. 
+                        Whether you’re a casual viewer or a dedicated cinephile, Viodaka helps you explore, track, and share your viewing journey.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+
+            <!-- Footer -->
+            <footer>
+                    <div class="ft-container">
+                    
+                        <!-- Left side  -->
+                        <div class="f-name-log-container">
+                            <div>
+                                <img src="../../img/logo/OWL LOGO.png" alt="own logo" class="f-owl-logo">
+                            </div>
+                            <div class="ft-left-side">
+                            <h1>Videoka</h1>
+                            <p>Lights, Camera, Discover</p>
+                            </div>
+                        </div>
+                    
+
+                        <!-- Right Side -->
+                        <div class="ft-right-side">
+                            <div class="ft-column">
+                                <p class="ft-title">Navigation</p>
+                                <a href="#">Home</a>
+                                <a href="#l-list">Hot Right Now</a>
+                                <a href="#l-about">About</a>
+                            </div>
+                            <div class="ft-column">
+                                <p class="ft-title">Media</p>
+                                <a  href="#">Facebook</a>
+                                <a  href="#">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright"><p>© 2025 Viodaka. All rights reserved.</p></div>
+            </footer>
+
+                    <!-- Login Modal -->
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div class="r-container">
+                        <p>Don’t have an account?<a href="#register-modal">Register</a></p>
+                        
+                    </div>      
+                </div>
+            </div>
+
+            <div id="register-modal" class="modal">
+                <div class="modal-content register">
+                    <a href="#" class="close">&times;</a>
+                    <h2>REGISTER</h2>
+                    <form>                    
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <button type="submit">Register</button>
+                    </form>
+                    <div class="r-container">
+                        <p>Have an account?<a href="#login-modal">Sign in</a></p>
+                        
+                    </div>      
+                </div>
+
+    </body>
+</html>

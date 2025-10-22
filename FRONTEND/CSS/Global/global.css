@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Colors / Backgrounds*/
+    --landing-page-gradient: linear-gradient(
+        to bottom left, 
+        #0D161F 40%, 
+        rgba(11, 34, 47, 0.8) 100%
+    );
+
+    --main-background-gradient: linear-gradient(
+        to bottom, 
+        #0D161F 66%, 
+        rgba(11, 34, 47, 0.8) 100%
+    );
+
+
+    --hero-gradient-right: linear-gradient(
+        to right,
+        rgba(13, 22, 31, 1) 30%,
+        rgba(13, 22, 31, 0.9) 60%,
+        rgba(13, 22, 31, 0.6) 70%,
+        rgba(13, 22, 31, 0) 100%
+    );
+
+    --hero-gradient-bottom: linear-gradient(
+        to bottom,
+        rgba(13, 22, 31, 1) 2%,
+        rgba(13, 22, 31, 0.9) 4%,
+        rgba(13, 22, 31, 0.6) 8%,
+        rgba(13, 22, 31, 0) 15%
+    );
+
+    --hero-gradient-top: linear-gradient(
+        to top,
+        rgba(13, 22, 31, 1) 2%,
+        rgba(13, 22, 31, 0.9) 4%,
+        rgba(13, 22, 31, 0.6) 5%,
+        rgba(13, 22, 31, 0) 10%
+    );
+    
+
+    /* Color components */
+    --text-color: #FFFFFF;
+    --main-button: #749678;
+    --main-color-bg: #172028;
+    --footer-bg: #172028;
+
+    --btn-hover: #5E7C60;
+
+
+    /*  px to rem conversion (1rem = 16px)  */
+    --sz-6: 0.375rem;    /* 6px */
+    --sz-7: 0.438rem;    /* 7px */
+    --sz-8: 0.5rem;      /* 8px */
+    --sz-9: 0.563rem;    /* 9px */
+    --sz-10: 0.625rem;   /* 10px */
+    --sz-11: 0.688rem;   /* 11px */
+    --sz-12: 0.75rem;    /* 12px */
+    --sz-13: 0.813rem;   /* 13px */
+    --sz-14: 0.875rem;   /* 14px */
+    --sz-15: 0.938rem;   /* 15px */
+    --sz-16: 1rem;       /* 16px */
+    --sz-17: 1.063rem;   /* 17px */
+    --sz-18: 1.125rem;   /* 18px */
+    --sz-19: 1.188rem;   /* 19px */
+    --sz-20: 1.25rem;    /* 20px */
+    --sz-22: 1.375rem;   /* 22px */
+    --sz-24: 1.5rem;     /* 24px */
+    --sz-25: 1.563rem;   /* 25px */
+    --sz-28: 1.75rem;    /* 28px */
+    --sz-30: 1.875rem;   /* 30px */
+    --sz-32: 2rem;       /* 32px */
+    --sz-36: 2.25rem;    /* 36px */
+    --sz-40: 2.5rem;     /* 40px */
+    --sz-45: 2.813rem;   /* 45px */
+    --sz-48: 3rem;       /* 48px */
+    --sz-50: 3.125rem;   /* 50px */
+    --sz-60: 3.75rem;    /* 60px */
+    --sz-64: 4rem;       /* 64px */
+    --sz-72: 4.5rem;     /* 72px */
+    --sz-80: 5rem;       /* 80px */
+    --sz-90: 5.625rem;   /* 90px */
+    --sz-100: 6.25rem;   /* 100px */
+    --sz-108: 6.75rem; /* 108px */
+    --sz-110: 6.875rem;  /* 110px */
+    --sz-120: 7.5rem;    /* 120px */
+    --sz-128: 8rem;      /* 128px */
+    --sz-140: 8.75rem;   /* 140px */
+    --sz-150: 9.375rem;  /* 150px */
+    --sz-160: 10rem;     /* 160px */
+    --sz-163: 10.188rem; /* 163px */
+    --sz-170: 10.625rem; /* 170px */
+    --sz-180: 11.25rem;  /* 180px */
+    --sz-200: 12.5rem;   /* 200px */
+    --sz-224: 14rem;    /* 224px */
+    --sz-240: 15rem;     /* 240px */
+    --sz-256: 16rem;     /* 256px */
+    --sz-260: 16.25rem; /* 260px */
+    --sz-280: 17.5rem;   /* 280px */
+    --sz-300: 18.75rem;  /* 300px */
+    --sz-320: 20rem;     /* 320px */
+    --sz-323: 20.188rem; /* 323px */
+    --sz-360: 22.5rem;   /* 360px */
+    --sz-400: 25rem;     /* 400px */
+    --sz-450: 28.125rem; /* 450px */
+    --sz-480: 30rem;     /* 480px */
+    --sz-500: 31.25rem;  /* 500px */
+    --sz-520: 32.5rem; /* 520px */
+    --sz-560: 35rem;     /* 560px */
+    --sz-600: 37.5rem;   /* 600px */
+    --sz-640: 40rem;     /* 640px */
+    --sz-720: 45rem;     /* 720px */
+    --sz-800: 50rem;     /* 800px */
+    --sz-845: 52.813rem; /* 845px */
+    --sz-900: 56.25rem;  /* 900px */
+    --sz-1000: 62.5rem;  /* 1000px */
+
+    /*Fonts / Weights/ sizes */
+    --ff-primary: 'Poppins';
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+
+    /* Font Sizes*/
+    
+   /*  Desktop  */
+    --fs-xxl: 6.25rem;  /* 100px - Hero / Landing page main title */
+    --fs-xl: 4rem;      /* 64px - Footer main title, large section headings */
+    --fs-lg: 2.25rem;   /* 36px - About section headings, sub-headers */
+    --fs-md: 1.5rem;    /* 24px - Header nav links, smaller headings */
+    --fs-sm: 1.25rem;   /* 20px - Buttons, secondary text, footer motto */
+    --fs-xs: 0.9375rem; /* 15px - Paragraphs, descriptions, list items, details */
+
+
+}
+

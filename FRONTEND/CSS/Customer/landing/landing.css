@@ -1,0 +1,307 @@
+body {
+    background: var(--landing-page-gradient);
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: var(--sz-420);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--sz-30) 0;
+}
+
+.main-h-container {
+    padding: 0 5rem;
+    border-radius: var(--sz-100);
+    width: var(--sz-1000);
+    height: var(--sz-420);
+    background:
+        linear-gradient(
+            to right,
+            rgba(13, 22, 31, 1) 0%,
+            rgba(13, 22, 31, 1) 40%,
+            rgba(13, 22, 31, 0) 100%
+        ),
+        url("../../Customer/landing/intersellar.jpg") center/cover no-repeat;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--sz-600);
+    height: auto;
+    padding: var(--sz-40) var(--sz-10);
+    gap: var(--sz-10);
+}
+
+.hero h1 {
+    font-size: var(--sz-64);
+    font-weight: var(--fw-bold);
+}
+
+.hero p {
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+
+.sr-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fa-solid.fa-magnifying-glass{
+    position: relative;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+
+.landing-list{
+    margin: var(--sz-30) 0;
+    margin: 0 var(--fs-xl);
+}
+
+a.lp-hot{
+    display: block;
+    text-align: left ;
+    width: 100%;
+    font-size: var(--fs-sm);
+}
+
+a.lp-hot:hover{
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.movie-poster[data-title="The Black Phone"]{
+    background: url(../../../img/Movies/The\ Black\ Phone.webp) center/cover no-repeat;
+    border-radius: var(--sz-15);
+    
+}
+
+
+
+.movie-poster[data-title="Tron Ares"]{
+    background: url(../../../img/Movies/Tron_ares.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Fortune"]{
+    background: url(../../../img/Movies/The\ Good\ Fortune.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="conjuring"]{
+    background: url(../../../img/Movies/The\ conjuring\ the\ last\ rites.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Demon Slayer"]{
+    background: url(../../../img/Movies/Demon\ Salyer\ Infinity\ Castle.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Alice in Borderland"]{
+    background: url(../../../img//Tvshows/Alice\ in\ Borderland.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: var(--sz-50) var(--fs-xl);
+    gap: var(--sz-10);
+}
+
+.about h1{
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+}
+
+.about p{
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-regular);
+}
+
+
+
+/*  MODAL BASE  */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+/* When the modal is targeted (clicked link) */
+.modal:target {
+    display: flex;
+}
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+
+
+    /* Header */
+    .land-header{
+        padding: var(--sz-20);
+    }
+
+    .owl-logo{
+        width: var(--sz-40);
+        height: auto;
+        object-fit: contain;
+    }
+    #h-sitename{
+        font-size: var(--sz-20);
+    }
+
+    .nav{
+        font-size: var(--sz-11);
+        gap: 1.5rem;
+    }
+
+    ul{
+        gap: 1rem;
+    }
+
+    a {
+        width: auto; 
+        padding: var(--sz-6) var(--sz-10); 
+        font-size: var(--sz-11); 
+    }
+
+    /* Hero */
+
+    .main-h-container {
+        max-width: 90%;
+        padding: var(--sz-20);
+    }
+
+    .hero-container h1 {
+        font-size: var(--sz-32);
+    }
+
+    .hero-container p {
+        font-size: var(--sz-14);
+    }
+
+
+    /* The List */
+    .Trending{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: var(--sz-40);
+        padding: 0px;
+    }
+
+    .movie-poster{
+        width: var(--sz-120);  
+        height: var(--sz-170);
+    }
+
+    .movie-title{
+        width: var(--sz-100);
+        height: 2rem;
+        font-weight: var(--fw-medium);
+    }
+
+
+    .movie-title p{
+        margin: 0 auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    /* About */
+    .about{
+        padding: 3rem 2rem 0rem;
+    }
+    .about h1{
+        font-size: var(--sz-14);
+    }
+
+    .about p{
+        font-size: var(--sz-10);
+    }
+
+    /* Footer */
+
+
+    .ft-container{
+        gap: 2rem;
+        padding: var(--sz-30) var(--sz-20);
+    }
+
+    .f-name-log-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+    
+    .f-owl-logo{
+        width: var(--sz-50); 
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .ft-left-side h1{
+        font-size: var(--sz-30);
+        line-height: 1rem;
+    }
+
+    .ft-left-side p{
+        font-size: var(--sz-10);
+    }
+    
+    .ft-right-side{
+        gap: 1rem ;
+        padding: 0px;
+
+    }
+
+    .ft-right-side a{
+        font-size: var(--sz-10);
+        height: 1rem;
+    }
+
+    .ft-right-side p{
+        font-size: var(--sz-10);
+    }
+    
+
+    .copyright{
+        font-size: var(--sz-10);
+        padding: var(--sz-10) var(--sz-20);
+    }
+}
+

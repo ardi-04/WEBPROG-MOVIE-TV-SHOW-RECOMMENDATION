@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="icon" type="image/png" href="../../img/logo/OWL LOGO.png">
+        <link rel="stylesheet" href="../../CSS/Global/global.css">
+        <link rel="stylesheet" href="../../CSS/Global/component.css">
+        <link rel="stylesheet" href="../../CSS/Customer/home.css">
+        <title>VIODAKA</title>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header class="land-header">
+            <!-- Hidden checkbox for the menu toggle -->
+            <input type="checkbox" id="menu-toggle" hidden>
+
+            <div class="h-right-container">
+                <!-- MENU BUTTON -->
+                <label for="menu-toggle" class="h-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <!-- MENU DROPDOWN -->
+                <div class="menu-box">
+                    <a href="#">HOME</a>
+                    <a href="#">MOVIES</a>
+                    <a href="#">TV SHOWS</a>
+                    <a href="#">TOP RATED</a>
+                    <a href="#">WATCHLIST</a>
+                </div>
+
+                <!-- SITE LOGO AND NAME -->
+                <div class="head-log-name">
+                    <img src="../../img/logo/OWL LOGO.png" alt="owl" class="owl-logo">
+                    <h1 id="h-sitename"><a href="landing.html">VIODAKA</a></h1>
+                </div>  
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="h-c-search">
+                <form action="">
+                <input type="search" class="search" placeholder="Find Movies or TV Shows"> 
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>       
+            </div>
+
+            <!-- NORMAL NAVIGATION (still exists) -->
+            <nav class="nav-container">
+                <li>
+                    <ul class="nav home"><a href="#">HOME</a></ul>
+                    <ul class="nav movies"><a href="#">MOVIES</a></ul>
+                    <ul class="nav tvShow"><a href="#">TV SHOW</a></ul>
+                    <ul class="nav logIn"><a href="#login-modal">LOG IN</a></ul>                            
+                </li>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="hero">
+                <div>
+                    <div class="hero-container">
+                        <div class="card card1">
+                            <div class="card-details">
+                                <h6>#1 Trending</h6>
+                                <h1>Black Phone 2</h1>
+                                <p>Four years after escaping The Grabber, Finney Blake is struggling with his life after captivity. 
+                                    When his sister Gwen begins receiving calls in her dreams from the black phone and seeing disturbing visions of three boys being stalked at a winter camp, 
+                                    the siblings become determined to solve the mystery and confront a killer who has grown more powerful in 
+                                    death and more significant to them than either could imagine.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <div class="r-buttons">
+                                <button class="h-wl-button">Add to watchlist</button>
+                                <button class="h-dtls-button">Details</button>
+                            </div>
+                            <div class="l-buttons">
+                                <button class="b-cr-left"><i class="fa-solid fa-caret-left"></i></button>
+                                <button class="b-cr-right"><i class="fa-solid fa-caret-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+            <footer>
+                    <div class="ft-container">
+                        <!-- Left side  -->
+                        <div class="f-name-log-container">
+                            <div>
+                                <img src="../../img/logo/OWL LOGO.png" alt="own logo" class="f-owl-logo">
+                            </div>
+                            <div class="ft-left-side">
+                            <h1>Viodaka</h1>
+                            <p>Lights, Camera, Discover</p>
+                            </div>
+                        </div>
+                    
+
+                        <!-- Right Side -->
+                        <div class="ft-right-side">
+                            <div class="ft-column">
+                                <p class="ft-title">Navigation</p>
+                                <a href="#">Home</a>
+                                <a href="#l-list">Hot Right Now</a>
+                                <a href="#l-about">About</a>
+                            </div>
+                            <div class="ft-column">
+                                <p class="ft-title">Media</p>
+                                <a  href="#">Facebook</a>
+                                <a  href="#">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright"><p>© 2025 Viodaka. All rights reserved.</p></div>
+            </footer>
+
+    
+    </body>
+</html>

@@ -1,0 +1,159 @@
+
+
+.land-header{
+    padding:var(--sz-10) var(--sz-20) ;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#h-sitename{
+    cursor: pointer;
+}
+
+#h-sitename a:hover{
+    background: transparent;
+}
+
+/* Positioning and base layout */
+.h-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+/* Hidden dropdown by default */
+.menu-box {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 1.3%;
+    background: var(--footer-bg);
+    border-radius: var(--sz-10);
+    padding: var(--sz-10) var(--sz-15);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    flex-direction: column;
+    z-index: 10;
+}
+
+
+.menu-box a {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: var(--sz-10) 0;
+    color: var(--text-color);
+}
+
+.menu-box a:hover {
+    color: var(--main-button);
+    color: var(--text-color);
+    border-radius: 0;
+    margin: var(--sz-10) 0;
+    padding: var(--sz-10);
+    border-radius: var(--sz-10);
+}
+
+#menu-toggle:checked ~ .h-right-container .menu-box {
+    display: flex;
+}
+
+
+/* Hero Page */
+.hero{
+    position: relative;
+    z-index: 1;
+}
+.hero-container{
+    width: 100%;
+    height: var(--sz-500);
+}
+
+/* Card */
+
+.card {
+    height: var(--sz-500); 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    background-image:
+        var(--hero-gradient-right),
+        var(--hero-gradient-bottom);
+}
+
+/* hero card details */
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--sz-720);
+    position: absolute;
+    top: 40%;
+    left: var(--sz-50);
+}
+
+.card-details h1{
+    font-size: var(--sz-50);
+    font-weight: var(--fw-bold);
+}
+
+.card-details h6{
+    font-size: var(--sz-15);
+    font-weight: var(--fw-regular);
+}
+
+.card1 {
+    background-image: 
+        var(--hero-gradient-right),
+        var(--hero-gradient-bottom),
+        var( --hero-gradient-top),
+        url(../../img/Movies/Banners/black\ phone\ 2.webp);
+}
+
+/* Hero Buttons */
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 90%;
+    left: 1.1%;
+    width: 100%;
+    padding: 0 var(--sz-30);
+}
+
+.h-wl-button{
+    width: var(--sz-260);
+    font-size: var(--sz-15);
+}
+
+.h-dtls-button{
+    background-color: rgba(217, 217, 217, 0.4);
+    font-size: var(--sz-15);
+}
+
+.r-buttons{
+    display: flex;
+    gap: var(--sz-20) ;
+}
+
+.l-buttons{
+    display: flex;
+    gap: var(--sz-10);
+}
+
+.b-cr-left, .b-cr-right{
+    background-color: rgba(217, 217, 217, 0.4);
+    font-size: var(--sz-20);
+}

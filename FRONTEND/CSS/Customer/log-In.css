@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.login-container{
+    background-color: var(--main-color-bg);
+    width: var(--sz-845);
+    height: var(--sz-520);
+}
