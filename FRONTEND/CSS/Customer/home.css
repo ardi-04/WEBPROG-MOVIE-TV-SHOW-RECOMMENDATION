@@ -41,18 +41,25 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     flex-direction: column;
     z-index: 10;
+    gap: 5px;
+    width: 12rem;
 }
 
 
 .menu-box a {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: start;
     color: var(--text-color);
     text-decoration: none;
-    padding: var(--sz-10) 0;
-    color: var(--text-color);
+    padding: var(--sz-10);
+    border-radius: var(--sz-10);
+    line-height: 1.2rem;
+    white-space: nowrap; /* fixed */
+    transition:  0.2s ease;
+    width: 100%;
 }
+
 
 .menu-box a:hover {
     color: var(--main-button);
@@ -61,6 +68,8 @@
     margin: var(--sz-10) 0;
     padding: var(--sz-10);
     border-radius: var(--sz-10);
+    background-color: var(--main-button); /* add this */
+    color: var(--text-color);
 }
 
 #menu-toggle:checked ~ .h-right-container .menu-box {
@@ -157,3 +166,41 @@
     font-size: var(--sz-20);
 }
 
+
+
+.movie-poster[data-title="The Black Phone"]{
+    background: url(../../../FRONTEND/img/Movies/The\ Black\ Phone.webp ) center/cover no-repeat;
+    border-radius: var(--sz-15);
+    
+}
+
+
+
+.movie-poster[data-title="Tron Ares"]{
+    background: url(../../../FRONTEND/img/Movies/Tron_ares.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Fortune"]{
+    background: url(../../../FRONTEND/img/Movies/The\ Good\ Fortune.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="conjuring"]{
+    background: url(../../../FRONTEND/img/Movies/The\ conjuring\ the\ last\ rites.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Demon Slayer"]{
+    background: url(../../img/Movies/Demon\ Salyer\ Infinity\ Castle.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}
+
+
+.movie-poster[data-title="Alice in Borderland"]{
+    background: url(../../../FRONTEND/img/Tvshows/Alice\ in\ Borderland.webp) center/cover no-repeat;
+    border-radius: var(--sz-15); 
+}

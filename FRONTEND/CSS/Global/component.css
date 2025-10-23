@@ -170,6 +170,23 @@ a.DM{
 
 
 /* Movie list */
+.list-container{
+    margin: var(--sz-30) var(--fs-xl);
+}
+
+.list-title{
+    display: inline;
+    text-align: left ;
+    width: 100%;
+    font-size: var(--fs-sm);
+}
+
+a.list-title:hover{
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 .movie-section{
     display: flex;
@@ -177,10 +194,11 @@ a.DM{
     gap: var(--sz-20);
 }
 
-.Trending{
+.cards-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+
 
 
 .movie-card{
@@ -214,23 +232,52 @@ a.DM{
     text-align: center;
 }
 
+
+.title-list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-buttons-container{
+    display: flex;
+    gap: var(--sz-6);
+}
+
+.list-cr-right,
+.list-cr-left{
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(217, 217, 217, 0.4)
+}
+
 /* Footer */
 
 
 
 /* Footer */
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--footer-bg);
     width: 100%;
     /* height: var(--sz-280); */
     height: min-content;
     margin-top: var(--sz-40);
+    position: relative;
 
 }
 
 
 .ft-container{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 2rem var(--fs-xl);
     background-color: var(--footer-bg);
@@ -263,9 +310,11 @@ footer{
 
 .ft-right-side a{
     font-weight: var(--fw-regular);
-    align-items: start;
+    align-items: center;
     justify-content: start;
     padding: 0;
+    white-space: nowrap;
+    height: 2rem;
 }
 
 
@@ -300,6 +349,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: start;
     gap: 0;
 }
 
@@ -307,6 +357,7 @@ footer{
     width: var(--sz-150); 
     height: auto;
     object-fit: contain;
+    align-self: start;
 }
 
 
