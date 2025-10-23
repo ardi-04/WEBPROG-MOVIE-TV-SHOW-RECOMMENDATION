@@ -65,23 +65,9 @@ body {
 
 
 .landing-list{
-    margin: var(--sz-30) 0;
-    margin: 0 var(--fs-xl);
+    margin: var(--sz-30) var(--fs-xl);
 }
 
-a.lp-hot{
-    display: block;
-    text-align: left ;
-    width: 100%;
-    font-size: var(--fs-sm);
-}
-
-a.lp-hot:hover{
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: underline;
-
-}
 
 .movie-poster[data-title="The Black Phone"]{
     background: url(../../../img/Movies/The\ Black\ Phone.webp) center/cover no-repeat;
@@ -185,6 +171,9 @@ a.lp-hot:hover{
     .nav{
         font-size: var(--sz-11);
         gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     ul{
@@ -193,10 +182,15 @@ a.lp-hot:hover{
 
     a {
         width: auto; 
-        padding: var(--sz-6) var(--sz-10); 
+        padding: var(--sz-7) var(--sz-10); 
         font-size: var(--sz-11); 
+        line-height: 1.1rem;
     }
 
+    .tvShow a{
+        white-space: nowrap;
+    }
+    
     /* Hero */
 
     .main-h-container {
@@ -214,7 +208,7 @@ a.lp-hot:hover{
 
 
     /* The List */
-    .Trending{
+    .cards-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
